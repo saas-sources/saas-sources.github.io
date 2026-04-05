@@ -1,103 +1,153 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="低价售卖优质网站模板平台，提供专业的SaaS启动器、AI开发框架和快速MVP模板。包括Supastarter、MkSaaS、ShipAny、TinyShip和MvpFast等热门模板，低价人民币66元出售，包更新。通过扫码联系购买，实现快速网站开发和商业化。">
-    <meta name="keywords" content="网站模板, SaaS模板, AI模板, MVP模板, Next.js boilerplate, Nuxt.js starter, 快速开发框架, SaaS启动器, AI SaaS框架, 网站开发工具, 生产级模板, 多语言支持, 支付集成, 认证系统, Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast, 低价网站模板, 包更新模板, Next.js SaaS启动器, AI图像生成器, AI聊天机器人, 全栈SaaS开发平台, MVP开发模板">
+    <meta name="description" content="SaaS源码提供低价优质的网站模板、SaaS启动器和AI开发框架。涵盖Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast及Shadcn Studio等热门生产级模板，仅售66元并包更新。">
+    <meta name="keywords" content="网站模板, SaaS源码, SaaS模板, AI模板, MVP模板, Next.js boilerplate, Nuxt.js starter, SaaS启动器, AI SaaS框架, Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast, Shadcn Studio, 低价网站模板, 源码出售">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="FastNextSite - 优质网站模板销售平台">
-    <meta property="og:title" content="低价售卖优质网站模板 - 专业SaaS、AI和MVP模板">
-    <meta property="og:description" content="探索高质量网站模板，包括Supastarter、MkSaaS、ShipAny、TinyShip和MvpFast。低价人民币66元出售，包更新。通过扫码联系购买。">
+    <meta name="author" content="SaaS Sources">
+    <link rel="canonical" href="https://saas-sources.github.io/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="SaaS源码 | 低价优质网站模板与AI框架">
+    <meta property="og:description" content="探索高质量网站模板，包括Supastarter、MkSaaS、ShipAny、TinyShip、MvpFast和Shadcn Studio。低价人民币66元出售，包更新。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fastnextsite.top">
-    <meta property="og:image" content="https://fastnextsite.top/og-image.jpg"> 
-    <title>低价售卖优质网站模板 - Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast 等专业模板</title>
+    <meta property="og:url" content="https://saas-sources.github.io/">
+    <meta property="og:image" content="https://saas-sources.github.io/og-image.jpg"> 
+    <meta property="og:site_name" content="SaaS Sources">
+    
+    <title>SaaS源码 | 低价优质网站模板 - Supastarter, MkSaaS, Shadcn Studio等</title>
     <style>
+        :root {
+            --primary-color: #007bff;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            color: var(--text-color);
+            background-color: var(--bg-color);
         }
         header {
-            background-color: #007bff;
+            background-color: var(--primary-color);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         header h1 {
-            margin: 0;
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
         nav {
-            margin-top: 10px;
+            margin-top: 20px;
         }
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         main {
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
         .template {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            background: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 12px;
+            padding: 25px;
+            background: var(--card-bg);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .template:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         }
         .template h3 {
-            color: #007bff;
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.4rem;
         }
         .template ul {
-            list-style-type: disc;
             padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .template li {
+            margin-bottom: 8px;
+        }
+        .price-tag {
+            font-weight: bold;
+            color: #e53e3e;
+            font-size: 1.1rem;
         }
         .template a {
-            color: #007bff;
+            color: var(--primary-color);
             text-decoration: none;
+            font-weight: bold;
         }
         .template a:hover {
             text-decoration: underline;
         }
         #contact {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
         #contact img {
-            max-width: 600px;
+            max-width: 100%;
+            width: 300px;
             height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            margin-top: 20px;
+            padding: 20px;
+            background: #343a40;
+            color: #f8f9fa;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
         }
         @media (max-width: 768px) {
-            main {
-                padding: 10px;
-            }
-            .template {
-                padding: 10px;
+            header h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>低价售卖优质网站模板平台</h1>
+        <h1>SaaS源码 - 优质网站模板平台</h1>
         <p>专业提供SaaS、AI和MVP网站模板，低价人民币66元出售，包更新，帮助您快速构建生产级应用</p>
         <nav>
             <a href="#templates">模板展示</a>
@@ -105,101 +155,114 @@
         </nav>
     </header>
     <main>
-        <section id="templates">
+        <section class="intro">
             <h2>我们的热门网站模板</h2>
-            <p>以下是精选的优质网站模板，涵盖SaaS启动器、AI开发框架和快速MVP工具。这些模板基于现代技术栈，如Next.js、Nuxt.js，支持认证、支付、多语言等功能。每个模板均为生产级，适合开发者快速启动项目。所有模板低价人民币66元出售，包更新。</p>
-            
-            <div class="template">
-                <h3>Supastarter - Next.js和Nuxt.js的SaaS启动器</h3>
-                <p>Supastarter是一个可扩展、生产就绪的Next.js SaaS启动器套件，旨在节省开发时间，帮助您更快地发布SaaS应用。它提供了一个功能齐全的样板代码，包括现代、多语言和订阅-based软件产品的必需工具和集成。</p>
+            <p>以下是精选的优质网站模板，涵盖SaaS启动器、AI开发框架和快速MVP工具。这些模板基于现代技术栈（如Next.js、Nuxt.js），支持认证、支付、多语言等功能。每个模板均为生产级，适合开发者快速启动项目。<strong>所有模板低价人民币66元出售，包更新。</strong></p>
+        </section>
+        
+        <section id="templates" class="template-grid">
+            <!-- Shadcn Studio -->
+            <article class="template">
+                <h3>Shadcn Studio - 高级UI组件与后台模板</h3>
+                <p>Shadcn Studio 提供基于 Shadcn UI 的专业级模板和组件，帮助开发者快速构建现代化、美观的 Web 应用后台和仪表盘，极大提升前端开发效率。</p>
+                <ul>
+                    <li>丰富组件：提供大量预设的、高度可定制的UI组件。</li>
+                    <li>现代设计：基于最新的设计趋势，界面美观专业。</li>
+                    <li>完美适配：与 Next.js 和 Tailwind CSS 深度集成。</li>
+                    <li>快速构建：提供完整的页面布局和仪表盘模板。</li>
+                </ul>
+                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p><a href="https://shadcnstudio.com/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
+            </article>
+
+            <!-- Supastarter -->
+            <article class="template">
+                <h3>Supastarter - Next.js/Nuxt.js SaaS启动器</h3>
+                <p>Supastarter是一个可扩展、生产就绪的SaaS启动器套件，旨在节省开发时间。它提供了一个功能齐全的样板代码，包括现代软件产品的必需工具和集成。</p>
                 <ul>
                     <li>认证：支持密码、魔法链接、OAuth、2FA等。</li>
-                    <li>支付：完整的计费流程，支持订阅和座位-based计费。</li>
+                    <li>支付：完整的计费流程，支持订阅和座位计费。</li>
                     <li>国际化：多语言应用支持。</li>
                     <li>AI集成：内置AI聊天机器人。</li>
-                    <li>其他：后台任务、管理UI、博客和分析工具。</li>
                 </ul>
-                <p>低价人民币66元出售，包更新。<a href="https://supastarter.dev/" target="_blank">官网链接</a></p>
-                <p>关键词：Next.js SaaS启动器、SaaS样板、认证、支付、国际化、Supastarter。</p>
-                <p>感兴趣？通过下方扫码联系购买。</p>
-            </div>
+                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p><a href="https://supastarter.dev/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
+            </article>
             
-            <div class="template">
-                <h3>MkSaaS - 在周末构建您的AI SaaS产品</h3>
-                <p>MkSaaS是一个完整的Next.js样板，旨在帮助开发者在周末内快速构建盈利的AI驱动SaaS产品。它包括AI集成、认证、支付、国际化、SEO等必需功能，无需从零开始。</p>
+            <!-- MkSaaS -->
+            <article class="template">
+                <h3>MkSaaS - 周末构建AI SaaS产品</h3>
+                <p>MkSaaS是一个完整的Next.js样板，旨在帮助开发者在周末内快速构建盈利的AI驱动SaaS产品。它包括AI集成、认证、支付、国际化、SEO等必需功能。</p>
                 <ul>
-                    <li>技术栈：Next.js、BetterAuth、Drizzle ORM、Stripe、Shadcn UI等。</li>
-                    <li>认证：电子邮件/密码、社会登录、密码重置。</li>
-                    <li>支付：Stripe订阅和一次性支付。</li>
+                    <li>技术栈：Next.js, BetterAuth, Drizzle ORM, Stripe, Shadcn UI。</li>
+                    <li>认证与支付：社会登录、Stripe订阅和一次性支付。</li>
                     <li>AI功能：内置AI图像生成器、文本生成器和聊天机器人。</li>
-                    <li>其他：博客、文档、电子邮件集成、主题和分析。</li>
                 </ul>
-                <p>低价人民币66元出售，包更新。<a href="https://mksaas.com/" target="_blank">官网链接</a></p>
-                <p>关键词：Next.js样板、AI SaaS模板、Stripe支付、认证、i18n、SEO优化、MkSaaS。</p>
-                <p>感兴趣？通过下方扫码联系购买。</p>
-            </div>
+                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p><a href="https://mksaas.com/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
+            </article>
             
-            <div class="template">
+            <!-- ShipAny -->
+            <article class="template">
                 <h3>ShipAny - AI SaaS开发框架</h3>
-                <p>ShipAny是一个AI SaaS开发框架，旨在让开发者以最小编码快速构建和启动AI驱动的SaaS应用。它集成了流行解决方案，提供全面工具，包括着陆页、管理仪表板以及数据库、认证和国际化的核心模块。</p>
+                <p>ShipAny是一个AI SaaS开发框架，旨在让开发者以最小编码快速构建和启动AI驱动的SaaS应用。提供全面工具，包括着陆页、管理仪表板及核心模块。</p>
                 <ul>
                     <li>着陆页：通过配置文件构建多语言着陆页，无需编码。</li>
                     <li>管理仪表板：权限控制（RBAC）、内容管理、支付和用户管理。</li>
-                    <li>扩展功能：支付（Stripe）、存储、电子邮件、分析和AI SDK集成。</li>
-                    <li>快速启动：在1小时内启动AI SaaS项目。</li>
+                    <li>扩展功能：支付、存储、电子邮件、分析和AI SDK集成。</li>
                 </ul>
-                <p>低价人民币66元出售，包更新。<a href="https://shipany.ai/" target="_blank">官网链接</a></p>
-                <p>关键词：AI SaaS开发框架、快速AI SaaS启动、无代码着陆页、支付集成、AI SDK、ShipAny。</p>
-                <p>感兴趣？通过下方扫码联系购买。</p>
-            </div>
+                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p><a href="https://shipany.ai/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
+            </article>
             
-            <div class="template">
-                <h3>TinyShip - 现代化全栈SaaS开发启动器</h3>
-                <p>TinyShip是一个现代全栈SaaS开发启动平台，支持双框架（Next.js和Nuxt.js），AI集成，并无缝覆盖国内外市场。采用开放的Monorepo架构，避免厂商锁定。</p>
+            <!-- TinyShip -->
+            <article class="template">
+                <h3>TinyShip - 现代化全栈SaaS启动器</h3>
+                <p>TinyShip是一个现代全栈SaaS开发启动平台，支持双框架（Next.js和Nuxt.js），AI集成，并无缝覆盖国内外市场。采用开放的Monorepo架构。</p>
                 <ul>
-                    <li>双框架支持：Next.js或Nuxt.js。</li>
-                    <li>认证：企业级系统，包括电子邮件/手机/OAuth登录、2FA。</li>
-                    <li>全球和本地适应：支持Stripe/OAuth和微信登录/支付，内置i18n。</li>
-                    <li>AI准备：集成Vercel AI SDK。</li>
-                    <li>其他：通信集成、主题系统、管理面板。</li>
+                    <li>双框架支持：Next.js 或 Nuxt.js。</li>
+                    <li>全球与本地化：支持Stripe/OAuth和微信登录/支付，内置i18n。</li>
+                    <li>AI准备：深度集成Vercel AI SDK。</li>
                 </ul>
-                <p>低价人民币66元出售，包更新。<a href="https://tinyship.cn/" target="_blank">官网链接</a></p>
-                <p>关键词：全栈SaaS开发平台、Next.js Nuxt.js双框架、身份认证系统、全球化本土化、AI集成、TinyShip。</p>
-                <p>感兴趣？通过下方扫码联系购买。</p>
-            </div>
+                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p><a href="https://tinyship.cn/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
+            </article>
             
-            <div class="template">
+            <!-- MvpFast -->
+            <article class="template">
                 <h3>MvpFast - 快速构建网站应用</h3>
-                <p>MvpFast是一个NextJs开发模板，旨在使用AI和预构建模块快速构建网站应用。它包括登录、支付、文章、博客和微信开发功能，以及学习课程，帮助开发者快速启动MVP并实现想法变现。</p>
+                <p>MvpFast是一个Next.js开发模板，旨在使用AI和预构建模块快速构建网站应用。包括登录、支付、文章、博客和微信开发功能，帮助快速启动MVP。</p>
                 <ul>
-                    <li>多个登录选项：电子邮件、手机、微信、GitHub、Google。</li>
-                    <li>集成：支付（微信支付）、认证、数据库、样式（NextJs + Tailwindcss）。</li>
-                    <li>预构建组件：用于快速MVP开发和想法验证。</li>
-                    <li>部署：通过Vercel在一分钟内部署。</li>
+                    <li>多重登录：电子邮件、手机、微信、GitHub、Google。</li>
+                    <li>集成：微信支付、认证、数据库、Next.js + Tailwindcss。</li>
+                    <li>快速部署：通过Vercel在一分钟内部署上线。</li>
                 </ul>
-                <p>低价人民币66元出售，包更新。<a href="https://www.mvpfast.top/" target="_blank">官网链接</a></p>
-                <p>关键词：NextJs模板、MVP开发、微信登录、支付集成、博客模块、AI网站构建器、MvpFast。</p>
-                <p>感兴趣？通过下方扫码联系购买。</p>
-            </div>
+                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p><a href="https://www.mvpfast.top/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
+            </article>
         </section>
         
         <section id="contact">
-            <h2>联系方式</h2>
-            <p>如果您对任何模板感兴趣，请扫码添加我进行咨询和购买。我们提供专业支持和定制服务，所有模板低价人民币66元出售，包更新。</p>
-            <img src="./66666666666666.png" alt="扫码添加联系方式进行模板购买"> 
+            <h2>联系方式 / 购买渠道</h2>
+            <p>如果您对以上任何模板感兴趣，请扫码添加微信进行咨询和购买。我们提供专业支持，<strong>所有模板低价人民币66元出售，且包含后续更新</strong>。</p>
+            <img src="./66666666666666.png" alt="扫码添加微信联系购买SaaS模板"> 
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 FastNextSite - 优质网站模板销售平台。所有权利保留。关键词：低价售卖网站模板、SaaS开发工具、AI框架模板、Supastarter、MkSaaS、ShipAny、TinyShip、MvpFast。</p>
+        <p>&copy; 2026 SaaS Sources - 优质网站模板与源码销售平台。保留所有权利。</p>
+        <p>关键词：低价网站模板, SaaS开发工具, AI框架源码, Shadcn Studio, Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast。</p>
     </footer>
     <script>
-        // 内联JS：简单滚动到锚点
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
