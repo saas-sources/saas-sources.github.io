@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SaaS源码提供低价优质的网站模板、SaaS启动器和AI开发框架。涵盖Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast及Shadcn Studio等热门生产级模板，仅售66元并包更新。">
+    <meta name="description" content="SaaS源码提供低价优质的网站模板、SaaS启动器和AI开发框架。涵盖Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast及Shadcn Studio等热门生产级模板，仅售9.9元并包更新。">
     <meta name="keywords" content="网站模板, SaaS源码, SaaS模板, AI模板, MVP模板, Next.js boilerplate, Nuxt.js starter, SaaS启动器, AI SaaS框架, Supastarter, MkSaaS, ShipAny, TinyShip, MvpFast, Shadcn Studio, 低价网站模板, 源码出售">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SaaS Sources">
@@ -11,7 +11,7 @@
     
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="SaaS源码 | 低价优质网站模板与AI框架">
-    <meta property="og:description" content="探索高质量网站模板，包括Supastarter、MkSaaS、ShipAny、TinyShip、MvpFast和Shadcn Studio。低价人民币66元出售，包更新。">
+    <meta property="og:description" content="探索高质量网站模板，包括Supastarter、MkSaaS、ShipAny、TinyShip、MvpFast和Shadcn Studio。低价人民币9.9元出售，包更新。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saas-sources.github.io/">
     <meta property="og:image" content="https://saas-sources.github.io/og-image.jpg"> 
@@ -20,127 +20,209 @@
     <title>SaaS源码 | 低价优质网站模板 - Supastarter, MkSaaS, Shadcn Studio等</title>
     <style>
         :root {
-            --primary-color: #007bff;
-            --bg-color: #f8f9fa;
-            --text-color: #333;
+            --primary-color: #2563eb;
+            --primary-light: #3b82f6;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
             --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --price-color: #dc2626;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
         }
+        /* 头部优化 */
         header {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
             color: white;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
+            box-shadow: var(--shadow-md);
         }
         header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5rem;
+            margin: 0 0 15px 0;
+            font-size: 2.8rem;
+            font-weight: 700;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 0 auto 30px;
+            opacity: 0.95;
         }
         nav {
-            margin-top: 20px;
+            margin-top: 10px;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
         }
         nav a:hover {
-            text-decoration: underline;
+            background: rgba(255,255,255,0.2);
+            text-decoration: none;
         }
         main {
             max-width: 1200px;
-            margin: 40px auto;
+            margin: 50px auto;
             padding: 0 20px;
         }
         .intro {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
+        .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .intro p {
+            font-size: 1.1rem;
+            color: #475569;
+        }
+        /* 产品网格布局优化 */
         .template-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 25px;
         }
+        /* 产品卡片优化 */
         .template {
-            border: 1px solid #eaeaea;
-            border-radius: 12px;
-            padding: 25px;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
             background: var(--card-bg);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
         .template:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
         }
         .template h3 {
             color: var(--primary-color);
-            margin-top: 0;
-            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+        .template p {
+            margin-bottom: 18px;
+            color: #334155;
         }
         .template ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
+            padding-left: 22px;
+            margin-bottom: 25px;
+            flex-grow: 1;
         }
         .template li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: #475569;
         }
+        /* 价格标签优化 */
         .price-tag {
-            font-weight: bold;
-            color: #e53e3e;
-            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--price-color);
+            font-size: 1.2rem;
+            padding: 10px 0;
+            border-top: 1px dashed var(--border-color);
+            margin-top: auto;
         }
         .template a {
+            display: inline-block;
             color: var(--primary-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: color 0.3s ease;
         }
         .template a:hover {
+            color: var(--primary-light);
             text-decoration: underline;
         }
+        /* 联系区域优化 */
         #contact {
             text-align: center;
-            margin-top: 60px;
-            padding: 40px;
+            margin-top: 70px;
+            padding: 50px;
             background: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        #contact p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #334155;
         }
         #contact img {
             max-width: 100%;
-            width: 300px;
+            width: 320px;
             height: auto;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
         }
+        #contact img:hover {
+            transform: scale(1.03);
+        }
+        /* 页脚优化 */
         footer {
             text-align: center;
-            padding: 20px;
-            background: #343a40;
-            color: #f8f9fa;
-            margin-top: 40px;
+            padding: 35px 20px;
+            background: #1e293b;
+            color: #f1f5f9;
+            margin-top: 50px;
         }
         footer p {
-            margin: 5px 0;
-            font-size: 0.9rem;
+            margin: 8px 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
         }
+        /* 响应式优化 */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            nav a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+            .template-grid {
+                grid-template-columns: 1fr;
+            }
+            #contact {
+                padding: 35px 25px;
             }
         }
     </style>
@@ -148,7 +230,7 @@
 <body>
     <header>
         <h1>SaaS源码 - 优质网站模板平台</h1>
-        <p>专业提供SaaS、AI和MVP网站模板，低价人民币66元出售，包更新，帮助您快速构建生产级应用</p>
+        <p>专业提供SaaS、AI和MVP网站模板，低价人民币9.9元出售，包更新，帮助您快速构建生产级应用</p>
         <nav>
             <a href="#templates">模板展示</a>
             <a href="#contact">联系购买</a>
@@ -157,7 +239,7 @@
     <main>
         <section class="intro">
             <h2>我们的热门网站模板</h2>
-            <p>以下是精选的优质网站模板，涵盖SaaS启动器、AI开发框架和快速MVP工具。这些模板基于现代技术栈（如Next.js、Nuxt.js），支持认证、支付、多语言等功能。每个模板均为生产级，适合开发者快速启动项目。<strong>所有模板低价人民币66元出售，包更新。</strong></p>
+            <p>以下是精选的优质网站模板，涵盖SaaS启动器、AI开发框架和快速MVP工具。这些模板基于现代技术栈（如Next.js、Nuxt.js），支持认证、支付、多语言等功能。每个模板均为生产级，适合开发者快速启动项目。<strong>所有模板低价人民币9.9元出售，包更新。</strong></p>
         </section>
         
         <section id="templates" class="template-grid">
@@ -171,7 +253,7 @@
                     <li>完美适配：与 Next.js 和 Tailwind CSS 深度集成。</li>
                     <li>快速构建：提供完整的页面布局和仪表盘模板。</li>
                 </ul>
-                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p class="price-tag">低价人民币9.9元出售，包更新。</p>
                 <p><a href="https://shadcnstudio.com/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
             </article>
 
@@ -185,7 +267,7 @@
                     <li>国际化：多语言应用支持。</li>
                     <li>AI集成：内置AI聊天机器人。</li>
                 </ul>
-                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p class="price-tag">低价人民币9.9元出售，包更新。</p>
                 <p><a href="https://supastarter.dev/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
             </article>
             
@@ -198,7 +280,7 @@
                     <li>认证与支付：社会登录、Stripe订阅和一次性支付。</li>
                     <li>AI功能：内置AI图像生成器、文本生成器和聊天机器人。</li>
                 </ul>
-                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p class="price-tag">低价人民币9.9元出售，包更新。</p>
                 <p><a href="https://mksaas.com/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
             </article>
             
@@ -211,7 +293,7 @@
                     <li>管理仪表板：权限控制（RBAC）、内容管理、支付和用户管理。</li>
                     <li>扩展功能：支付、存储、电子邮件、分析和AI SDK集成。</li>
                 </ul>
-                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p class="price-tag">低价人民币9.9元出售，包更新。</p>
                 <p><a href="https://shipany.ai/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
             </article>
             
@@ -224,7 +306,7 @@
                     <li>全球与本地化：支持Stripe/OAuth和微信登录/支付，内置i18n。</li>
                     <li>AI准备：深度集成Vercel AI SDK。</li>
                 </ul>
-                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p class="price-tag">低价人民币9.9元出售，包更新。</p>
                 <p><a href="https://tinyship.cn/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
             </article>
             
@@ -237,14 +319,14 @@
                     <li>集成：微信支付、认证、数据库、Next.js + Tailwindcss。</li>
                     <li>快速部署：通过Vercel在一分钟内部署上线。</li>
                 </ul>
-                <p class="price-tag">低价人民币66元出售，包更新。</p>
+                <p class="price-tag">低价人民币9.9元出售，包更新。</p>
                 <p><a href="https://www.mvpfast.top/" target="_blank" rel="noopener noreferrer">查看官网</a></p>
             </article>
         </section>
         
         <section id="contact">
             <h2>联系方式 / 购买渠道</h2>
-            <p>如果您对以上任何模板感兴趣，请扫码添加微信进行咨询和购买。我们提供专业支持，<strong>所有模板低价人民币66元出售，且包含后续更新</strong>。</p>
+            <p>如果您对以上任何模板感兴趣，请扫码添加微信进行咨询和购买。我们提供专业支持，<strong>所有模板低价人民币9.9元出售，且包含后续更新</strong>。</p>
             <img src="./66666666666666.png" alt="扫码添加微信联系购买SaaS模板"> 
         </section>
     </main>
