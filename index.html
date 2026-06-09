@@ -302,6 +302,15 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+        .template-card h3.title-long {
+            -webkit-line-clamp: unset;
+            display: block;
+        }
+        .price-consult {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -416,22 +425,11 @@
             margin: 0 auto;
         }
         .disclaimer-title {
-            display: flex;
-            align-items: center;
-            gap: 6px;
             font-size: 0.78rem;
             font-weight: 600;
             color: #8b7e6e;
             margin-bottom: 10px;
-            cursor: pointer;
-            user-select: none;
         }
-        .disclaimer-title .arrow {
-            font-size: 0.65rem;
-            transition: transform 0.2s;
-        }
-        .disclaimer.collapsed .arrow { transform: rotate(-90deg); }
-        .disclaimer.collapsed .disclaimer-list { display: none; }
         .disclaimer-list {
             list-style: none;
             padding: 0;
@@ -494,7 +492,7 @@
                     <h2 id="saas-heading">SaaS 模板</h2>
                     <p>Next.js / Nuxt 等全栈 SaaS 启动器，含认证、支付、多租户等开箱即用功能</p>
                 </div>
-                <span class="category-count">10 款</span>
+                <span class="category-count">14 款</span>
             </div>
             <div class="template-grid">
 
@@ -582,6 +580,40 @@
 
                 <article class="template-card" itemscope itemtype="https://schema.org/Product">
                     <div class="thumb">
+                        <img src="https://placehold.co/400x300/059669/FFF?text=ShipAny+Next" alt="ShipAny Next SaaS 模板" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="body">
+                        <h3 itemprop="name">ShipAny Next</h3>
+                        <div class="card-footer">
+                            <div class="price-row">
+                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="CNY">
+                                    <span itemprop="price" content="6">6</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="template-card" itemscope itemtype="https://schema.org/Product">
+                    <div class="thumb">
+                        <img src="https://placehold.co/400x300/047857/FFF?text=ShipAny+Tanstack" alt="ShipAny Tanstack SaaS 模板" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="body">
+                        <h3 itemprop="name">ShipAny Tanstack</h3>
+                        <div class="card-footer">
+                            <div class="price-row">
+                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="CNY">
+                                    <span itemprop="price" content="6">6</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="template-card" itemscope itemtype="https://schema.org/Product">
+                    <div class="thumb">
                         <img src="https://placehold.co/400x300/8b5cf6/FFF?text=TinyShip+AI" alt="TinyShip AI SaaS 模板" loading="lazy" width="400" height="300">
                     </div>
                     <div class="body">
@@ -657,21 +689,60 @@
 
                 <article class="template-card" itemscope itemtype="https://schema.org/Product">
                     <div class="thumb">
-                        <img src="https://placehold.co/400x300/f97316/FFF?text=Bundle" alt="SaaS 模板合集包" loading="lazy" width="400" height="300">
+                        <img src="https://placehold.co/400x300/8b5cf6/FFF?text=MkImage" alt="MkImage 模板" loading="lazy" width="400" height="300">
                     </div>
                     <div class="body">
-                        <h3 itemprop="name">MkSaaS / ShipAny / Supastarter 等合集</h3>
-                        <div class="tags">
-                            <span class="tag gray">人气第5名</span>
-                            <span class="tag gray">38人想要</span>
-                        </div>
+                        <h3 itemprop="name">MkImage 模板</h3>
+                        <div class="tags"><span class="tag gray">24小时内发布</span></div>
                         <div class="card-footer">
                             <div class="price-row">
                                 <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                     <meta itemprop="priceCurrency" content="CNY">
-                                    <span itemprop="price" content="1">1</span>
+                                    <span itemprop="price" content="25">25</span>
                                 </span>
+                                <span class="price-old">¥999</span>
                             </div>
+                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="template-card" itemscope itemtype="https://schema.org/Product">
+                    <div class="thumb">
+                        <img src="https://placehold.co/400x300/ec4899/FFF?text=Tanstarter" alt="Tanstarter 模板" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="body">
+                        <h3 itemprop="name">Tanstarter 模板</h3>
+                        <div class="tags"><span class="tag gray">24小时内发布</span></div>
+                        <div class="card-footer">
+                            <div class="price-row">
+                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="CNY">
+                                    <span itemprop="price" content="25">25</span>
+                                </span>
+                                <span class="price-old">¥999</span>
+                            </div>
+                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="template-card" itemscope itemtype="https://schema.org/Product">
+                    <div class="thumb">
+                        <img src="https://placehold.co/400x300/10b981/FFF?text=TanStack" alt="Tanstarter MkImage 模板" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="body">
+                        <h3 itemprop="name">Tanstarter MkImage</h3>
+                        <div class="tags"><span class="tag gray">2人评价"响应迅速"</span></div>
+                        <div class="card-footer">
+                            <div class="price-row">
+                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="CNY">
+                                    <span itemprop="price" content="45">45</span>
+                                </span>
+                                <span class="price-old">¥999</span>
+                            </div>
+                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
                         </div>
                     </div>
                 </article>
@@ -709,7 +780,7 @@
                     <h2 id="ui-heading">UI 模板</h2>
                     <p>Shadcn、MagicUI、Aceternity 等高质量 UI 组件与页面模板</p>
                 </div>
-                <span class="category-count">7 款</span>
+                <span class="category-count">4 款</span>
             </div>
             <div class="template-grid">
 
@@ -791,66 +862,6 @@
                     </div>
                 </article>
 
-                <article class="template-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="thumb">
-                        <img src="https://placehold.co/400x300/8b5cf6/FFF?text=MkImage" alt="MkImage UI 模板" loading="lazy" width="400" height="300">
-                    </div>
-                    <div class="body">
-                        <h3 itemprop="name">MkImage 模板</h3>
-                        <div class="tags"><span class="tag gray">24小时内发布</span></div>
-                        <div class="card-footer">
-                            <div class="price-row">
-                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="CNY">
-                                    <span itemprop="price" content="25">25</span>
-                                </span>
-                                <span class="price-old">¥999</span>
-                            </div>
-                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="template-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="thumb">
-                        <img src="https://placehold.co/400x300/ec4899/FFF?text=Tanstarter" alt="Tanstarter UI 模板" loading="lazy" width="400" height="300">
-                    </div>
-                    <div class="body">
-                        <h3 itemprop="name">Tanstarter 模板</h3>
-                        <div class="tags"><span class="tag gray">24小时内发布</span></div>
-                        <div class="card-footer">
-                            <div class="price-row">
-                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="CNY">
-                                    <span itemprop="price" content="25">25</span>
-                                </span>
-                                <span class="price-old">¥999</span>
-                            </div>
-                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="template-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="thumb">
-                        <img src="https://placehold.co/400x300/10b981/FFF?text=TanStack" alt="Tanstarter MkImage 模板" loading="lazy" width="400" height="300">
-                    </div>
-                    <div class="body">
-                        <h3 itemprop="name">Tanstarter MkImage</h3>
-                        <div class="tags"><span class="tag gray">2人评价"响应迅速"</span></div>
-                        <div class="card-footer">
-                            <div class="price-row">
-                                <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                    <meta itemprop="priceCurrency" content="CNY">
-                                    <span itemprop="price" content="45">45</span>
-                                </span>
-                                <span class="price-old">¥999</span>
-                            </div>
-                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
-                        </div>
-                    </div>
-                </article>
-
             </div>
         </section>
 
@@ -862,9 +873,28 @@
                     <h2 id="indie-heading">独立开发</h2>
                     <p>定制开发服务、教程资料、部署指南及其他开发者资源</p>
                 </div>
-                <span class="category-count">4 款</span>
+                <span class="category-count">5 款</span>
             </div>
             <div class="template-grid">
+
+                <article class="template-card" itemscope itemtype="https://schema.org/Product">
+                    <div class="thumb">
+                        <img src="https://placehold.co/400x300/f97316/FFF?text=Consult" alt="全模板咨询" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="body">
+                        <h3 class="title-long" itemprop="name">Supastarter / MkSaaS / ShipAny AI / ShipAny Nanobanana / ShipAny Next / ShipAny Tanstack / TinyShip AI / TinyShip / MvpFast / MkDirs / MkImage / Tanstarter / Tanstarter MkImage / All In One / Shadcn Studio / Shadcn Blocks / MagicUI / Aceternity UI 等模板咨询</h3>
+                        <div class="tags">
+                            <span class="tag gold">咨询</span>
+                            <span class="tag gray">38人想要</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price-row">
+                                <span class="price-consult">扫码咨询</span>
+                            </div>
+                            <div class="seller"><span class="seller-dot"></span><span>厨房清新的海蓝灯</span></div>
+                        </div>
+                    </div>
+                </article>
 
                 <article class="template-card" itemscope itemtype="https://schema.org/Product">
                     <div class="thumb">
@@ -961,19 +991,16 @@
             <p>&copy; 2026 SaaS Sources — 优质网站模板与源码销售平台</p>
             <p class="footer-keywords">SaaS模板 · UI模板 · Supastarter · MkSaaS · ShipAny · TinyShip · MvpFast · Shadcn Studio · MagicUI · Aceternity UI · 独立开发</p>
         </div>
-        <aside class="disclaimer" id="disclaimer" aria-label="重要声明">
+        <div class="disclaimer" aria-label="重要声明">
             <div class="disclaimer-inner">
-                <div class="disclaimer-title" role="button" tabindex="0" aria-expanded="true" aria-controls="disclaimer-list">
-                    <span class="arrow" aria-hidden="true">▼</span>
-                    <span>重要声明</span>
-                </div>
-                <ol class="disclaimer-list" id="disclaimer-list">
+                <p class="disclaimer-title">重要声明</p>
+                <ol class="disclaimer-list">
                     <li>1、本店所整理与分享的内容均来自网络公开渠道，仅用于学习与交流，版权归原作者所有。</li>
                     <li>2、商品售价为资料整理与服务成本费用，并非出售内容版权，如认可内容价值，建议支持正版。</li>
                     <li>3、如相关内容涉及侵权，请及时联系本店，我们将在核实后第一时间处理或删除。</li>
                 </ol>
             </div>
-        </aside>
+        </div>
     </footer>
 
     <script>
@@ -1003,20 +1030,6 @@
         }
         window.addEventListener('scroll', updateNav, { passive: true });
         updateNav();
-
-        // 声明折叠
-        var disclaimer = document.getElementById('disclaimer');
-        var title = disclaimer.querySelector('.disclaimer-title');
-        title.addEventListener('click', function () {
-            var collapsed = disclaimer.classList.toggle('collapsed');
-            title.setAttribute('aria-expanded', !collapsed);
-        });
-        title.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                title.click();
-            }
-        });
     </script>
 </body>
 </html>
